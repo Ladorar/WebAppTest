@@ -1,5 +1,5 @@
 # Tells the image to use the latest version of PHP
-FROM php:latest-apache  
+FROM php:8.0-apache  
 
 RUN a2enmod rewrite
 
