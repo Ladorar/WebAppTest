@@ -5,7 +5,8 @@
 <h1>My first PHP page</h1>
 
 <?php
-echo "Hello World!";
+$date = date('m/d/Y h:i:s a', time());
+echo $date;
 ?>
 
 </body>

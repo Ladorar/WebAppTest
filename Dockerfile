@@ -8,3 +8,5 @@ COPY /php/ /var/www/html
 
 # Sets that directory as your working directory
 WORKDIR /var/www/html 
+
+CMD [ "service apache2 restart" ]
