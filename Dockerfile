@@ -8,3 +8,5 @@ COPY . /var/www/html
 
 # Sets that directory as your working directory
 WORKDIR /var/www/html 
+
+CMD ["apache2"]
