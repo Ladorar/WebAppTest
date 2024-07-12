@@ -5,7 +5,8 @@
 <h1>My first PHP page</h1>
 
 <?php
-$date = date('m/d/Y h:i:s a', time());
+date_default_timezone_set('Europe/Berlin');
+$date = date('d.m.Y h:i:s a', time());
 echo $date;
 ?>
 
