@@ -1,4 +1,4 @@
-name: docker_build_push_acr
+name: Build Docker and publish to ACR
  
 on:
   push:
