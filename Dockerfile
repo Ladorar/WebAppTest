@@ -1,12 +1,10 @@
 # Tells the image to use the latest version of PHP
-FROM php:8.0-apache  
+FROM nginx:1.26-alpine  
 
 RUN a2enmod rewrite
 
 # Copies your code to the image
-COPY /php/ /var/www/html
+COPY /html/ /usr/share/nginx/html
 
 # Sets that directory as your working directory
-WORKDIR /var/www/html 
-
-#CMD [ "apache2 -k restart" ]
+WORKDIR /usr/share/nginx/html 
